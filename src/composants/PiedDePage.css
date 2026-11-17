@@ -1,0 +1,35 @@
+
+/* PIED DE PAGE */
+
+.pied-de-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espace-16);
+    width: 100%;
+    margin-top: var(--espace-32);
+    padding: var(--espace-24) var(--espace-16);
+    background-color: var(--couleur-primaire);
+    color: var(--couleur-surface);
+    text-align: center;
+}
+
+.pied-de-page p {
+    margin-bottom: 0;
+}
+
+.pied-de-page nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--espace-16);
+}
+
+.pied-de-page nav a {
+    color: var(--couleur-surface);
+    text-decoration: none;
+}
+
+.pied-de-page nav a:hover {
+    text-decoration: underline;
+}

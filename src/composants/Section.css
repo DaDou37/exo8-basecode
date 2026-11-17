@@ -1,0 +1,39 @@
+
+/* CATALOGUE */
+
+.catalogue {
+    width: 100%;
+    max-width: 1280px;
+    min-width: 0;
+    margin: 0 auto;
+    padding: var(--espace-24);
+}
+
+
+/* NOMBRE DE LIVRES */
+
+.nombre-livres {
+    margin-bottom: var(--espace-16);
+    color: var(--couleur-texte-attenue);
+    font-size: 1rem;
+}
+
+/* MESSAGE DU CATALOGUE */
+
+.catalogue-message {
+    margin-bottom: var(--espace-16);
+}
+
+/* BOUTON RÉESSAYER */
+
+.retry-button {
+    margin-bottom: var(--espace-16);
+}
+
+/* AFFICHER PLUS */
+
+.afficher-plus {
+    display: flex;
+    width: 100%;
+    margin-top: var(--espace-24);
+}

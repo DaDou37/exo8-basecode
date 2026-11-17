@@ -1,0 +1,22 @@
+
+/* GRILLE DES LIVRES */
+
+.liste-livres {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(min(100%, 280px), 1fr)
+    );
+    gap: var(--espace-16);
+    width: 100%;
+    min-width: 0;
+}
+
+/* MESSAGE AUCUN LIVRE */
+
+.liste-livres-vide {
+    width: 100%;
+    margin-top: var(--espace-24);
+    color: var(--couleur-texte-attenue);
+    text-align: center;
+}

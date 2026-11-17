@@ -1,0 +1,79 @@
+
+/* EN-TÊTE */
+
+.en-tete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--espace-16);
+    width: 100%;
+    min-height: 64px;
+    padding: var(--espace-12) var(--espace-24);
+    background-color: var(--couleur-primaire);
+    color: var(--couleur-surface);
+}
+
+.en-tete h1 {
+    margin: 0;
+    color: var(--couleur-surface);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: var(--espace-24);
+}
+
+.navigation a {
+    color: var(--couleur-surface);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* BOUTON BURGER */
+
+.menu-burger {
+    display: none;
+    padding: var(--espace-8);
+    border: none;
+    background: transparent;
+    color: var(--couleur-surface);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width: 600px) {
+
+    .en-tete {
+        justify-content: space-between;
+        padding: var(--espace-16);
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: var(--espace-16);
+        padding: var(--espace-16) 0;
+    }
+
+    .navigation.ouverte {
+        display: flex;
+    }
+}

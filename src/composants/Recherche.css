@@ -1,0 +1,22 @@
+.champ {
+    width: 100%;
+    min-width: 0;
+}
+
+.champ__saisie {
+    width: 100%;
+    max-width: 100%;
+    min-height: 46px;
+    padding: var(--espace-12);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: var(--rayon-bouton);
+    background-color: var(--couleur-surface);
+    color: var(--couleur-texte);
+    font: inherit;
+}
+
+.champ__saisie:focus {
+    border-color: var(--couleur-primaire);
+    outline: 2px solid var(--couleur-primaire);
+    outline-offset: 2px;
+}
